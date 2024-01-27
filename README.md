@@ -1,0 +1,2 @@
+# slipice
+Discord bot source
