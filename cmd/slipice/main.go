@@ -7,14 +7,14 @@ import (
 	"syscall"
 
 	"github.com/bwmarrin/discordgo"
-	"github.com/joho/godotenv"
 
-	"github.com/arcticstrap/slipice/pkg/textparse"
+	"github.com/arcticstrap/slipice/textparse"
+	"github.com/arcticstrap/slipice/utils/environment"
 )
 
 func main() {
 	// Load environment variables
-	err := godotenv.Load()
+	err := environment.Load()
 	if err != nil {
 		log.Fatalf("Failed to load .env file: %v", err)
 	}
